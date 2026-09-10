@@ -35,7 +35,7 @@ fail in the same direction: they report high confidence where the system is most
 
 | Study | Confidence mechanism | Result |
 |---|---|---|
-| 1 | RANSAC inlier ratio, three detectors | The learned detector (DISK) produced the most detections and was the worst calibrated of the three, ECE 0.232 against 0.091 for ORB |
+| 1, 2 and 3 | RANSAC inlier ratio, three detectors(ORB, SIFT and DISK) | The learned detector (DISK) produced the most detections and was the worst calibrated of the three, ECE 0.232 against 0.091 for ORB |
 | 4 | Predicted range distribution, SPEED+ | ResNet-18 collapses to a near-constant prediction on real imagery; translation error rises 14.5× and 15.4× |
 | 5 | Monte Carlo dropout, epistemic term | Epistemic uncertainty *falls* to 0.65× on the domains where error rises 15×; ROC area 0.251 and 0.256, below chance |
 | 6 | Inlier ratio inside an EKF | Identical confidence on frames whose attitude is wrong by 180°; filter NEES 8.9–9.2 against 3.0 expected |
