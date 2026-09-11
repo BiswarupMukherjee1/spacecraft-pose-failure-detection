@@ -62,7 +62,7 @@ the resulting failure.
 
 ```
 notebooks/
-    01_02_03_pose_failure_study.ipynb        detector benchmark, confidence calibration
+    Exp_01_02_03_pose_estimation_benchmarking_confidence_study        ORB, SIFT, DISK detector benchmark, confidence calibration
     04_speedplus_cnn_vs_vit.ipynb      CNN vs ViT on SPEED+, domain gap measured
     05_uncertainty_domain_gap.ipynb    aleatoric / epistemic split, calibration
     06_ekf_monte_carlo.ipynb           HCW dynamics, EKF, Monte Carlo campaign
