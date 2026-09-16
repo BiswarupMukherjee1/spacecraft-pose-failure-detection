@@ -61,12 +61,6 @@ the resulting failure.
 ## Repository layout
 
 ```
-notebooks/
-    Exp_01_02_03_pose_estimation_benchmarking_confidence_study        ORB, SIFT, DISK detector benchmark, confidence calibration
-    04_speedplus_cnn_vs_vit.ipynb      CNN vs ViT on SPEED+, domain gap measured
-    05_uncertainty_domain_gap.ipynb    aleatoric / epistemic split, calibration
-    06_ekf_monte_carlo.ipynb           HCW dynamics, EKF, Monte Carlo campaign
-    07_deployment_efficiency.ipynb     parameters, MACs, latency, quantisation
 src/
     sc_common.py                       target model, camera, renderer, degradations
     speedplus_data.py                  SPEED+ loader, schema handling
@@ -75,11 +69,15 @@ src/
     exp6_ekf_mc.py                     HCW dynamics, EKF, campaign runner
     exp7_efficiency.py                 profiling, quantisation, budget checks
 docs/
-    REPORT.md           concepts, methods and results in detail
+    REPORT.md           concepts, methods and results
+Exp1_2_3_pose_estimation_benchmarking_confidence_study        ORB, SIFT, DISK detector benchmark, confidence calibration
+Exp4_speedplus_cnn_vs_vit_pose_regression_speedplus.ipynb      CNN vs ViT on SPEED+, domain gap measured
+Exp5_uncertainty_across_domain_gap.ipynb    aleatoric / epistemic split, calibration
+Exp6_hcw_linearised_relative_motion_ekf_monte_carlo.ipynb           HCW dynamics, EKF, Monte Carlo campaign
+Exp7_deployment_efficiency.ipynb     parameters, MACs, latency, quantisation
 ```
 
-All notebooks are committed with outputs, so the results can be read without running
-anything.
+All notebooks are committed with outputs.
 
 ---
 
@@ -95,8 +93,7 @@ The dataset is published on Zenodo as a single 16.9 GB archive
 (record 5588480, DOI 10.25740/wv398fc4383, CC-BY-4.0) and is **not** included here.
 `src/speedplus_fetch.py` verifies the archive and extracts a working subset.
 
-Studies 1 and 6 use a programmatic wireframe target defined in `src/sc_common.py`, with
-exact ground truth.
+Studies 1 and 6 use a programmatic wireframe target defined in `src/sc_common.py`, with ground truth.
 
 ---
 
