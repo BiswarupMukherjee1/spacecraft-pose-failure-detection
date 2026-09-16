@@ -1,6 +1,6 @@
 # Failure detection and uncertainty in learned spacecraft pose estimation
 
-Biswarup Mukherjee: MSc IPCVai, Universidad Autónoma de Madrid, 2025–2027
+Biswarup Mukherjee: MSc IPCVai, 2025–2027
 
 This is a work on monocular relative pose estimation for spacecraft rendezvous and
 proximity operations. 
@@ -70,11 +70,11 @@ src/
     exp7_efficiency.py                 profiling, quantisation, budget checks
 docs/
     REPORT.md           concepts, methods and results
-Exp1_2_3_pose_estimation_benchmarking_confidence_study        ORB, SIFT, DISK detector benchmark, confidence calibration
-Exp4_speedplus_cnn_vs_vit_pose_regression_speedplus.ipynb      CNN vs ViT on SPEED+, domain gap measured
-Exp5_uncertainty_across_domain_gap.ipynb    aleatoric / epistemic split, calibration
-Exp6_hcw_linearised_relative_motion_ekf_monte_carlo.ipynb           HCW dynamics, EKF, Monte Carlo campaign
-Exp7_deployment_efficiency.ipynb     parameters, MACs, latency, quantisation
+Exp1_2_3_pose_estimation_benchmarking_confidence_study           ORB, SIFT, DISK detector benchmark, confidence calibration
+Exp4_speedplus_cnn_vs_vit_pose_regression_speedplus.ipynb        CNN vs ViT on SPEED+, domain gap measured
+Exp5_uncertainty_across_domain_gap.ipynb                         aleatoric / epistemic split, calibration
+Exp6_hcw_linearised_relative_motion_ekf_monte_carlo.ipynb        HCW dynamics, EKF, Monte Carlo campaign
+Exp7_deployment_efficiency.ipynb                                 parameters, MACs, latency, quantisation
 ```
 
 All notebooks are committed with outputs.
