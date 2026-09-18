@@ -68,8 +68,8 @@ src/
     pose_models.py                     backbones, heteroscedastic head, MC dropout
     exp6_ekf_mc.py                     HCW dynamics, EKF, campaign runner
     exp7_efficiency.py                 profiling, quantisation, budget checks
-docs/
-    REPORT.md           concepts, methods and results
+
+Experiments_Report.pdf                                           concepts, methods and results
 Exp1_2_3_pose_estimation_benchmarking_confidence_study           ORB, SIFT, DISK detector benchmark, confidence calibration
 Exp4_speedplus_cnn_vs_vit_pose_regression_speedplus.ipynb        CNN vs ViT on SPEED+, domain gap measured
 Exp5_uncertainty_across_domain_gap.ipynb                         aleatoric / epistemic split, calibration
