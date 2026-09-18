@@ -40,7 +40,7 @@ fail in the same direction: they report high confidence where the system is most
 | 5 | Monte Carlo dropout, epistemic term | Epistemic uncertainty *falls* to 0.65× on the domains where error rises 15×; ROC area 0.251 and 0.256, below chance |
 | 6 | Inlier ratio inside an EKF | Identical confidence on frames whose attitude is wrong by 180°; filter NEES 8.9–9.2 against 3.0 expected |
 
-Two further results bear on deployment and architecture:
+Two further results focus on deployment and architecture:
 
 - **The ranking of backbones reverses across the domain gap.** ResNet-18 is more
   accurate on synthetic imagery (0.271 m against 0.366 m median translation error) and
@@ -103,14 +103,11 @@ Studies 1 and 6 use a programmatic wireframe target defined in `src/sc_common.py
 pip install -r requirements.txt
 ```
 
-Notebooks 6 and 7 need no dataset and run in 10–20 minutes each.
+Notebooks 6 and 7 need no dataset.
 
-Notebooks 4 and 5 need SPEED+. Download the archive once, then set `ZIP` to its path
-and run; extraction of a working subset takes a few minutes. Both were run on a Colab
-T4: Experiment 4 takes roughly 20 minutes, Experiment 5 roughly 30.
-
-Configuration constants at the top of each notebook control cost. Reduced settings for
-CPU or integrated-GPU machines are given as comments beside them.
+Notebooks 4 and 5 need SPEED+. Archive can be downloaded once, then set `ZIP` to its path
+and run; extraction of a working subset takes a few minutes. Experiments were run on a Colab
+T4.
 
 ---
 
