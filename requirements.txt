@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+opencv-contrib-python
+torch
+torchvision
+transformers
+kornia
